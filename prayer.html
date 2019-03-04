@@ -1,0 +1,78 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prayer Requests</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_prayer.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="header">
+        <!--content in header.html-->
+    </div>
+
+
+    <h1 class="prayer_header">Please let us know if we can pray for you.</h1>
+    <h1 class="prayer_header_2">Life's journey is not meant to be made alone.</h1>
+
+    <div class="form_wrapper">
+
+        <form name="prayerRequest" action="https://formspree.io/apostlesofmarypeabody@gmail.com" onsubmit="return validateFields()" method="post">
+            <fieldset>
+        
+                <div class="name">
+                    <label for="name" class="label_name">What's Your First Name?:</label>
+                    <input type="text" id="name" name="user_name" class="input_name" maxlength="25" autofocus required>
+                    <span class="icon-validation"><i class="fas fa-check-circle"></i></span>
+
+                </div>
+                
+                <div class="email">
+                    <label for="mail" class="label_email">What's Your E-mail?:</label>
+                    <input type="email" id="mail" name="user_mail" placeholder="Please enter a valid email address" class="input_email" required> 
+                </div>
+               
+            </fieldset>
+                
+            <fieldset class="message">
+        
+                <label for="msg" id="label_message" class="label-message">What's Your Prayer Request?</label>
+                <input type="text" id="msg" name="user_message" class="input_message" min="1" max="300" required></input>
+               
+            </fieldset>
+                
+                
+                <div class="button">
+                    <button type="submit" id="submit">Send your prayer request</button>
+                </div>
+            
+            </form>
+
+    </div><!--end of form wrapper-->
+
+     
+
+    
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script>
+        //Include JS to include the headerand footer
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+
+
+      
+
+    </script> 
+</body>
+
+</html>

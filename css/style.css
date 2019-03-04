@@ -1,0 +1,248 @@
+/*****************************************/
+/***RESETS***/
+/*****************************************/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'lato', sans-serif;
+    font-size: 62.5%; /*10px/16px = 0.625 or 62.5%*/
+    color: var(--font-color);
+}
+
+:root{
+    --header-color: #2196f3;
+    --font-color: #333;
+}
+
+
+
+/************************************************/
+/******BACKGROUND IMAGE******/
+/************************************************/
+
+.mary{
+    background-image: url('../img/regnum_christi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    height: 80%;
+    background-color: #0d0d0d;
+}
+
+/************************************************/
+/******INTRODUCTION******/
+/************************************************/
+
+.intro{
+    padding: 2rem;
+    margin: 0 8rem;
+}
+
+.intro .header-1{
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--header-color);
+    margin-bottom: 4rem;
+}
+
+.header-2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+
+/***********************************/
+/***SEEK SECTION***/
+/***********************************/
+.seek{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "peace truth love"
+}
+
+.seek{
+    grid-column-gap: 1.5rem;
+    position: relative;
+}
+
+.peace {
+    grid-area: peace;
+}
+
+.truth{
+    grid-area: truth;
+}
+
+.love{
+    grid-area: love;
+}
+
+.question{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+}
+
+.question-header{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 1.5rem;
+}
+
+.question-img{
+   width: 100%;
+   max-width: 35rem;
+   height: auto;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
+
+.header-3{
+    margin-top: 1.5rem;
+    width: 80%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.come{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 2rem 0 3rem 0;
+}
+
+.come a:link,
+.come a:visited,
+.come a:active{
+    text-decoration: none;
+    color: var(--header-color);
+}
+
+.come a:hover {
+    color: #760ce8;
+    cursor: pointer;
+}
+
+/*************************************/
+/***MEDIA QUERIES***/
+/*************************************/
+
+@media screen and (max-width: 1100px){
+    .seek {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .question-img{
+        max-width: 40rem;
+    }
+
+    .header-3{
+        margin-bottom: 2rem;
+        width: 60%;
+    }
+
+    .intro{
+        margin: 0 4rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .intro{
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .intro .header-1{
+        font-size: 2rem;
+    }
+   
+    .come{
+        font-size: 1.2rem;
+    }
+
+    .header-2{
+        font-size: 1.1rem;
+    }
+
+    .header-3{
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 562px){
+    .intro .header-1{
+        font-size: 1.5rem;
+    }
+
+    .header-2{
+        font-size: 1rem;
+    }
+
+    .header-3{
+        font-size: 0.9rem;
+    }
+
+    .question-img{
+        max-width: 35rem;
+    }
+
+    .come{
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 482px){
+    
+    .intro{
+        width: 90%;
+    }
+    .come{
+        padding: 0 1.5rem;
+    }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,189 @@
+/*****************************************/
+/***RESETS***/
+/*****************************************/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'lato', sans-serif;
+    font-size: 62.5%; /*10px/16px = 0.625 or 62.5%*/
+}
+
+:root{
+    --header-color: #2196f3;
+}
+
+
+/********************************************/
+/***FORM CSS***/
+/********************************************/
+
+body{
+    background-image: 
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url(../img/path3.jpg);
+    background-size: cover;
+    background-position: top; 
+    
+
+}
+.prayer_header{
+    margin-top: 7rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.prayer_header_2{
+    margin-top: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.form_wrapper {
+    max-width: 40rem;
+    min-width: auto;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 2px solid rgba(232, 155, 12, 0.822);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    z-index: 100;
+    background-color: rgba(232, 155, 12, 0.822);
+
+}
+
+fieldset {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-bottom: 1rem;
+   border: 1px solid #ffffff;
+}
+
+.label_name, .label_email, .label-message {
+    padding-left: 2rem;
+    font-weight: 700;
+    font-size: 150%;
+    color: #333;
+}
+
+.label_name {
+    padding-right: 2rem;
+}
+
+.label_email {
+    padding-right: 4rem;
+}
+
+.input_name{
+    margin-top: 1rem;
+}
+
+.input_name, .input_email{
+    width: 50%;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.icon-validation {
+    display: none;
+}
+
+.label-message{
+    padding-right: 1rem; 
+    float: left;
+    margin-top: 2rem;
+}
+
+.input_message {
+    width: 50%;
+    height: 4rem;
+    margin: 1rem 0 1rem 0;
+}
+
+input[type=text]:valid{
+    color: green;
+}
+
+input[type=text]:invalid{
+    color: red;
+}
+
+.button button {
+    height: 2.5rem;
+    width: 8rem;
+    margin: 0 auto;
+    display: block;
+    border: #4d7847;
+    font-weight: 700;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: #4d7847;
+    color: #ffffff;
+}
+
+.button button:hover{
+    cursor: pointer;
+
+}
+
+
+/*********************************************/
+/***Media Queries for Form***/
+/*********************************************/
+
+@media screen and (max-width: 714px){
+    .form_wrapper{
+        margin: 0 2rem 0 2rem;
+    }
+
+    .label_name, .label_email {
+        display: block;
+        padding: .5rem 0 .5rem 1rem;
+    }
+
+    .input_name, .input_email {
+        display: block;
+        margin-left: 1rem;
+        width: 60%;
+    }
+
+    .label-message{
+        display: block;
+        margin-top: 0;
+        margin-left: -1rem;
+        margin-bottom: .5rem;
+    }
+
+    .input_message{
+        display: block;
+        margin-left: 1rem;
+        width: 60%;
+        height: 8rem;
+    }
+
+}
+
+
+
+
+
+
