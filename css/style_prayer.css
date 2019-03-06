@@ -30,7 +30,6 @@ body{
     background-size: cover;
     background-position: top; 
     
-
 }
 .prayer_header{
     margin-top: 7rem;
@@ -62,7 +61,6 @@ body{
     -o-border-radius: 8px;
     z-index: 100;
     background-color: rgba(232, 155, 12, 0.822);
-
 }
 
 fieldset {
@@ -142,7 +140,12 @@ input[type=text]:invalid{
 
 .button button:hover{
     cursor: pointer;
+}
 
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 
@@ -150,9 +153,24 @@ input[type=text]:invalid{
 /***Media Queries for Form***/
 /*********************************************/
 
+@media screen and (max-width:780px){
+    .form_wrapper{
+        margin-bottom: 2rem;
+    }
+
+    #footer{
+        position: relative;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto !important;
+    }
+}
+
 @media screen and (max-width: 714px){
     .form_wrapper{
-        margin: 0 2rem 0 2rem;
+        margin: 0 2rem 2rem 2rem;
     }
 
     .label_name, .label_email {
@@ -163,7 +181,7 @@ input[type=text]:invalid{
     .input_name, .input_email {
         display: block;
         margin-left: 1rem;
-        width: 60%;
+        width: 90%;
     }
 
     .label-message{
@@ -176,13 +194,40 @@ input[type=text]:invalid{
     .input_message{
         display: block;
         margin-left: 1rem;
-        width: 60%;
+        width: 90%;
         height: 8rem;
     }
-
 }
 
+@media screen and (max-width: 632px){
+    .prayer_header {
+        font-size: 1.8rem;
+    }
 
+    .prayer_header_2{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .prayer_header {
+        font-size: 1.5rem;
+    }
+
+    .prayer_header_2{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .prayer_header {
+        font-size: 1.2rem;
+    }
+
+    .prayer_header_2{
+        font-size: 1rem;
+    }
+}
 
 
 
